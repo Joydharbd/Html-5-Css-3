@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <link rel="stylesheet" href="css/table.css" />
+  </head>
+  <body>
+    <h3>Creating Table -</h3>
+    <p>
+      HTML table allows you to arrange data into rows and columns. They are
+      commonly used to display tabular data like product listings, customer's
+      details, financial reports, and so on.
+    </p>
+
+    <table>
+      <tr>
+        <th>No.</th>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Elsa Botsford</td>
+        <td>55</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Mr. Guadalupe Gusikowski</td>
+        <td>45</td>
+      </tr>
+    </table>
+
+    <!-- ################################### -->
+    <h3>Table border collapse -</h3>
+    <table style="border-collapse: collapse">
+      <tr>
+        <th>No.</th>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Elsa Botsford</td>
+        <td>55</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Mr. Guadalupe Gusikowski</td>
+        <td>45</td>
+      </tr>
+    </table>
+
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+    <h3>spanning multiple rows & columns -</h3>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Phone</th>
+      </tr>
+      <tr>
+        <td>Elsa Botsford</td>
+        <td>(314) 864-2465 x68903</td>
+        <td>321-996-3445 x2282</td>
+      </tr>
+      <tr>
+        <td>Mr. Guadalupe Gusikowski</td>
+        <td>1-919-276-1185 x450</td>
+        <td>1-305-465-7583 x75599</td>
+      </tr>
+    </table>
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+    <br /><br />
+    <table>
+      <tr>
+        <th>Name:</th>
+        <td>John Carter</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone:</th>
+        <td>(580) 223-5574</td>
+      </tr>
+      <tr>
+        <td>1-909-566-4587</td>
+      </tr>
+    </table>
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+    <br /><br />
+    <!-- table caption -->
+    <h3>table caption -</h3>
+    <table>
+      <caption>
+        User Info
+      </caption>
+      <tr>
+        <th>No.</th>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Elsa Botsford</td>
+        <td>55</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Mr. Guadalupe Gusikowski</td>
+        <td>45</td>
+      </tr>
+    </table>
+
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+    <h3>Define a table Header,Body and footer -</h3>
+    <table>
+      <thead>
+        <caption>
+          Cash Book
+        </caption>
+        <tr>
+          <th>Items</th>
+          <th>Quantity</th>
+          <th>Expenditure</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Stationary</td>
+          <td>1</td>
+          <td>2000</td>
+        </tr>
+        <tr>
+          <td>Furniture</td>
+          <td>3</td>
+          <td>10000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">Total</th>
+          <td>12000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
