@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>attributes</title>
+    <style>
+      #text {
+        color: rgb(127, 129, 255);
+        font-size: 30px;
+      }
+      .highlight {
+        color: green;
+        background-color: #000;
+      }
+      .box {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Attribute -</h3>
+    <!-- Attributes are always specified in the start tag (or opening tag) and usually consists of name/value pairs like name="value". 
+    Attribute values should always be enclosed in quotation marks. -->
+
+    <img src="img/kite.jpg" alt="kite image" width="200" height="200" />
+    <!-- 
+        src = for path/location
+        alt = alternative text for image
+        width = set image width
+        height = set image height
+     -->
+    <br />
+    <a href="https://www.google.com/" title="Search Engine">Google</a>
+    <!-- 
+        href = url
+        title = Show some text on hover link
+     -->
+
+    <!-- Boolean attribute -->
+    <h3>Boolean attribute -</h3>
+    <span>required value:</span>
+    <input type="email" required />
+    <br />
+    <span>disabled :</span>
+    <input type="submit" value="Submit" disabled /><br />
+    <span>checked : </span>
+    <input type="checkbox" checked />
+    <br />
+    <input type="text" value="Read only text" readonly />
+
+    <!-- id,class -->
+    <h3>id -</h3>
+    <p id="text">Lorem, ipsum dolor.</p>
+    <!-- The id attribute is used to give a unique name or identifier to an element within a document.  -->
+
+    <div class="box highlight">Lorem, ipsum dolor.</div>
+    <p class="highlight">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ad?
+    </p>
+    <!-- 
+        Like id attribute, the class attribute is also used to identify elements. But unlike id, the class attribute does not have to be unique in the document. This means you can apply the same class to multiple elements in a document
+     -->
+
+    <h3>Title attribute -</h3>
+    <!-- 
+        The title attribute to is used to provide advisory text about an element or its content. 
+     -->
+    <abbr title="world wide web">www</abbr>
+
+    <h3>style attribute -</h3>
+    <!-- The style attribute allows you to specify CSS styling rules such as color, font, border, etc. directly within the element.  -->
+    <p
+      style="
+        color: rgb(255, 255, 255);
+        border: 2px solid red;
+        background-color: green;
+      "
+    >
+      Lorem, ipsum dolor.
+    </p>
+  </body>
+</html>
