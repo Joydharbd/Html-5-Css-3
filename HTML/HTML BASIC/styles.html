@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Styles</title>
+    <style>
+      .embed {
+        color: rgb(154, 207, 154);
+        background-color: tomato;
+        font-size: 23px;
+      }
+    </style>
+    <link rel="stylesheet" href="css/external-css.css" />
+  </head>
+  <body>
+    <h3>Adding styles to HTML Elements -</h3>
+    <p>
+      Style information can either be attached as a separate document or
+      embedded in the HTML document itself. These are the three methods of
+      implementing styling information to an HTML document.
+    </p>
+    <ul>
+      <li>Inline styles — Using the style attribute in the HTML start tag.</li>
+      <li>
+        Embedded style — Using the &lt;style&gt; element in the head section of
+        the document.
+      </li>
+      <li>
+        External style sheet — Using the &lt;link&gt; element, pointing to an
+        external CSS files.
+      </li>
+    </ul>
+
+    <!-- ########################################################### -->
+    <h3>Inline css -</h3>
+    <p
+      style="
+        color: #fff;
+        background-color: blueviolet;
+        font-size: 22px;
+        text-align: center;
+      "
+    >
+      This text designed by using inline css.
+    </p>
+
+    <!-- Embedded style / internal css -->
+    <h3>Embedded style css -</h3>
+    <p class="embed">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <!-- External css -->
+    <h3>External style css -</h3>
+    <p class="external">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </p>
+  </body>
+</html>
