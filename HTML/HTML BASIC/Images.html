@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+  </head>
+  <body>
+    <!-- 
+        The <img> tag is used to insert images in the HTML documents. It is an empty element and contains attributes only.
+     -->
+    <h3>Images with kite -</h3>
+    <img src="img/kite.jpg" alt="A beautiful kite" />
+    <img src="img/big-kite.jpg" alt="A big kite" />
+    <br /><br />
+    <h3>Images width & height -</h3>
+    <img
+      src="img/big-kite.jpeg"
+      alt="big kite"
+      width="300"
+      height="300"
+    /><br />
+    <img
+      src="img/big-kite.jpeg"
+      alt="big kite"
+      style="width: 400px; height: 400px"
+    />
+
+    <br /><br />
+    <h3>Html5 picture element -</h3>
+    <p>
+      The &lt;picture&gt; element contains zero or more &lt;source&gt; elements,
+      each referring to different image source, and one &lt;img&gt; element at
+      the end. Also each &lt;source&gt; element has the media attribute which
+      specifies a media condition (similar to the media query) that is used by
+      the browser to determine when a particular source should be used.
+    </p>
+
+    <picture>
+      <source
+        media="(min-width:1000px )"
+        srcset="
+          https://img.freepik.com/free-photo/dark-blue-living-room-interior-with-cozy-luxury-leather-armchair-3d-rendering_41470-4159.jpg?w=900
+        "
+      />
+      <source
+        media="(min-width: 600px)"
+        srcset="
+          https://img.freepik.com/free-photo/interior-bright-living-room-with-pillows-sofa-plants-lamp-empty-blue-wall_41470-689.jpg?size=626&ext=jpg
+        "
+      />
+      <img
+        src="https://img.freepik.com/free-photo/living-room-interior-with-armchair-cabinet-empty-green-wall-background3d-rendering_41470-4402.jpg?w=740"
+        alt=""
+        width="400"
+      />
+    </picture>
+    <br /><br />
+
+    <h3>Image map -</h3>
+    <p>
+      An image map allows you to define hotspots on an image that acts just like
+      a hyperlink.
+    </p>
+    <img src="img/bd-map.webp" usemap="#image-map" />
+
+    <map name="image-map">
+      <area
+        target="_blank"
+        alt="Chittagong"
+        title="Chittagong"
+        href="http://www.chittagongdiv.gov.bd/"
+        coords="479,405,454,422,462,429,463,440,457,443,454,455,446,468,433,474,425,475,421,487,414,496,418,510,408,527,404,537,396,541,395,556,399,564,400,591,400,607,408,619,416,633,423,654,440,673,447,684,461,688,467,682,479,685,494,680,502,666,513,662,521,652,527,641,534,638,530,653,536,665,548,674,575,727,585,746,596,782,597,819,593,836,597,870,618,868,610,883,626,909,624,928,650,973,668,996,655,944,649,908,665,883,685,891,711,909,719,902,707,761,687,651,668,598,657,497,604,494,605,529,580,566,583,589,562,618,536,606,524,575,518,582,522,605,504,573,498,542,486,524,481,509,490,486,494,465,499,457,503,447,502,427,504,416,502,405"
+        shape="poly"
+      />
+      <area
+        target="_blank"
+        alt="Barishal"
+        title="Barishal"
+        href="http://www.barisaldiv.gov.bd/"
+        coords="286,605,463,829"
+        shape="rect"
+      />
+      <area
+        target="_blank"
+        alt="Sylhet"
+        title="Sylhet"
+        href="http://www.sylhetdiv.gov.bd/"
+        coords="565,328,106"
+        shape="circle"
+      />
+      <area
+        target="_blank"
+        alt="Rajshahi"
+        title="Rajshahi"
+        href="http://www.rajshahidiv.gov.bd/"
+        coords="137,336,88"
+        shape="circle"
+      />
+      <area
+        target="_blank"
+        alt="Dhaka"
+        title="Dhaka"
+        href="http://www.dhakadiv.gov.bd/"
+        coords="266,214,255,253,246,302,272,363,258,420,250,470,199,464,203,502,230,533,247,575,261,610,281,630,292,601,322,601,353,604,382,600,396,580,391,546,414,514,416,491,427,465,448,454,457,429,476,397,456,312,444,293,440,251"
+        shape="poly"
+      />
+      <area
+        target="_blank"
+        alt="Khulna"
+        title="Khulna"
+        href="http://www.khulnadiv.gov.bd/"
+        coords="99,421,80,516,100,573,123,610,131,657,138,723,147,777,157,835,210,839,268,835,285,792,279,752,286,735,280,683,282,643,242,555,219,516,202,478,177,464,191,463,145,430"
+        shape="poly"
+      />
+      <area
+        target="_blank"
+        alt="Rangpur"
+        title="Rangpur"
+        href="http://www.rangpurdiv.gov.bd/"
+        coords="58,8,70,35,48,56,30,75,16,103,18,142,40,147,69,174,109,195,125,207,156,234,176,248,209,267,232,274,250,245,256,218,273,211,278,184,281,162,276,147,281,115,273,82,253,64,234,77,231,101,191,85,168,58,163,32,134,27,138,50,159,64,122,55,103,46,97,35,81,18"
+        shape="poly"
+      />
+    </map>
+  </body>
+</html>
